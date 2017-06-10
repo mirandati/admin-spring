@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>AdminSpring</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<link rel="stylesheet" type="text/css" th:href="@{/css/bootstrap.min.css}"/>
+<link rel="stylesheet" th:href="@{/css/main.css}"/>
+
+</head>
+<body>
+	<div class="jumbotron text-center">
+	  <h1> Projeto Java Spring Dev Brasil </h1>
+	  
+	  <h3> Comunicação Spring com Thymeleaf </h3>
+	  <h3> Envio de Mensagens </h3>
+	  
+	  <span th:text="'Voce me mandou a palavra : ' + ${message}"></span>
+	</div>
+	  
+	<div class="container">
+	  <div class="row">
+	    
+	
+	    
+	    <div class="col-sm-4">
+	      <h3>Requisitos para Executar o Projeto</h3>
+	      <p> <b>Jre 8 (Java Runtime Enviroment ) </b> </p>	      
+	      <a href="https://www.java.com/pt_BR/download/">
+	           Link para fazer do download de acordo JRE 
+	           com o seu sistema Operacional:	           
+	        </a>
+	      <p> <b> Jdk 8 (Java Kit Development) </b> </p>
+	       <a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html?ssSourceSiteId=otnpt">
+	           Link para fazer do download de acordo 
+	           com o seu sistema Operacional:	           
+	        </a>
+	      <p> <b>Spring Tools Suite </b></p>
+	      <a href="https://spring.io/tools/sts/all">
+	           IDE do Spring baseada no eclipse para facilitar o desenvolvimento
+	           criação dos projetos 	           
+	       </a>	      
+	      
+	    </div>
+	    
+	    <div class="col-sm-4">
+	      <h3> Dependencias do Maven </h3>
+	      <p>Utilizando Maven no pom.xml </p>
+	      <p>Com as seguintes dependências </p>
+	      <p> ..</p>
+	      <p> spring-boot-starter-web </p>
+	      <p> spring-boot-devtools </p>
+	      <p> spring-boot-starter-thymeleaf </p>
+	      
+	      <p> ..</p>
+	      <p> spring-boot-maven-plugin </p>
+	    </div>
+	    	    
+	    <div class="col-sm-4">
+	      <h3> Execução o Projeto  </h3>
+	      <p> <b> Clique na classe SpringBootWebApplication</b>  </p>
+	      <p> <b> Com o botão direito escolha Run as Java Application.</b> </p>      	      
+	      <p> Vai aparecer no console o log do projeto rodando na porta 8080 .</p>
+	      <p>  </p>
+	      <p> <b> Para acessar a página principal do Projeto </b></p>
+	      <p>   http://localhost:8080/ </p>
+	      <p>    </p>
+	      <p> <b> Para fazer o envio de mensagens </b> </p>
+	      <p>   Coloque este endereço  </p>
+	      <p>   http://localhost:8080/teste/mensagem </p>
+	      
+	      <p>  Adicionando /teste/ { a mensagem a escolha} </p>
+	      
+	      <p>  Visualize a mensagem na página principal </p>	      
+	      
+	    </div>
+	    
+	  </div>
+	</div>
+	<script type="text/javascript" th:href="@{/js/bootstrap.min.css}"></script>
+</body>
+</html>
